@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Figma utilizado: https://www.figma.com/file/AZ6mvD0UbYSqVBVoSIptu1/Pokedesk?type=design&node-id=26-0&mode=design&t=wiAaJ5EMs3WAky2J-0
+
+Api endpoint: "https://pokeaoi.co/api/v2/pokemon/?offset=0&limit=20"
