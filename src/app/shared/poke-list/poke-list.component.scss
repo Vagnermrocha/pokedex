@@ -4,6 +4,7 @@
 $padding1: rem-calc(10);
 $padding: rem-calc(20);
 :host {
+.listagem {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -22,6 +23,10 @@ $padding: rem-calc(20);
     padding: $padding;
 
     border-radius: $padding1;
+
+    text-decoration: none;
+    color: var(--primary-color);
+
 
     &__status {
       h2 {
@@ -69,9 +74,10 @@ $padding: rem-calc(20);
       background: url('../../../assets/bg/background-list-pokemons.svg') no-repeat;
 
       img {
-        width: rem-calc(80);
+        width: rem-calc(60);
       }
 
     }
   }
+}
 }
