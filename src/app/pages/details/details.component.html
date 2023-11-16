@@ -7,13 +7,13 @@
       <h1 class="slideInLeft">{{ pokemon[0].name }}</h1>
       <h2 class="slideInRight">{{ pokemon[1].names[0].name }}</h2>
     </section>
-    <section>
+    <section class="pokemon__status__statistics fadeIn">
       <img
         [src]="pokemon[0].sprites.other.dream_world.front_default"
         [alt]="pokemon[0].name"
         class="slideInDown"
       />
-      <article class="'pokemon__status__statistics fadeIn">
+      <article >
         <section>
           <h3>Estatísticas</h3>
 
@@ -30,5 +30,5 @@
       </article>
     </section>
   </ng-template>
-  <img src="assets/error.png" alt="Deu erro na mosgtragem do pokemon" width="100%" *ngIf="apiError">
+  <img src="assets/error.png" alt="Deu erro na mostragem do pokemon" width="100%" *ngIf="apiError">
 </main>
