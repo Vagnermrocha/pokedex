@@ -1,4 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, HostListener } from '@angular/core';
+import { ScrollService } from 'src/app/scroll.service';
 
 @Component({
   selector: 'poke-search',
@@ -8,10 +9,16 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class PokeSearchComponent implements OnInit {
   @Output() public emmitSearch: EventEmitter<string> = new EventEmitter();
 
-  constructor() {}
+  constructor(private scrollService: ScrollService) {}
 
   ngOnInit(): void {
   }
+
+ @HostListener('window.scroll', [])
+ onWindowScroll() {
+  const scrollY = window.scrollY;
+  this.scrollService.setScroll(scrollY);
+ }
 
   public search(value: string) {
     this.emmitSearch.emit(value);

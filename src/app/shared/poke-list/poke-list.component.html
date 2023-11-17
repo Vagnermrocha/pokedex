@@ -1,6 +1,8 @@
  <!--Header-->
 <poke-header></poke-header>
 
+<div class="content">
+
  <!--Search -->
  <poke-search (emmitSearch)="getSearch($event)"></poke-search>
 
@@ -27,3 +29,4 @@
 </section>
 <img src="assets/error.png" alt="Deu erro na mostragem do pokemon" width="100%" *ngIf="apiError">
 
+</div>

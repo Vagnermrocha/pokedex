@@ -1,12 +1,25 @@
-@import '../../../config-scss/rem-calc.scss';
+@import "../../../config-scss/rem-calc.scss";
 
 :host {
   header {
+    position: fixed;
+    top: 0px;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: rem-calc(700);
+    height: rem-calc(27);
 
     padding: rem-calc(40) 0;
-
+    margin-left: 150px;
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
+  .header.scrolled {
+    background-color: var(--primary-color);
+  }
+  .content {
+    margin-top: 100px;
   }
 }

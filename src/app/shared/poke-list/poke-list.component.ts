@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { PokeApiService } from '../../service/poke-api.service';
+import { ScrollService } from '../../scroll.service';
+
 
 @Component({
   selector: 'poke-list',
@@ -15,7 +17,8 @@ export class PokeListComponent implements OnInit {
 
 
   constructor(
-    private pokeApiService: PokeApiService
+    private pokeApiService: PokeApiService,
+    private scrollService: ScrollService
   ) {}
 
   ngOnInit(): void {
@@ -29,6 +32,12 @@ export class PokeListComponent implements OnInit {
         this.apiError = true;
       }
     );
+  }
+
+  @HostListener('window: scroll', [])
+  onWindowScroll() {
+    const scrollY = window.scrollY;
+    this.scrollService.setScroll(scrollY);
   }
 
   public getSearch(value: string) {
