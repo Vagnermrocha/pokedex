@@ -1,34 +1,64 @@
-# Pokeapi
+🧬 Pokédex Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.2.
+Aplicação desenvolvida com Angular 16.1.2 que consome dados da PokéAPI para exibir uma lista de Pokémons. O projeto utiliza Standalone Components, animações CSS e segue um layout baseado em um design do Figma.
 
-## Development server
+🎨 Design
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Figma utilizado: Pokedesk UI
 
-## Code scaffolding
+🚀 Tecnologias utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 16.1.2
+- TypeScript
+- HTML / SCSS
+- Angular Standalone Components
+- PokéAPI
+- CSS Animations
 
-## Build
+📦 Funcionalidades
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- ✅ Listagem de Pokémons com imagens
+- ✅ Consumo de API externa (PokéAPI)
+- ✅ Componentes standalone
+- ✅ Estilização com SCSS e animações CSS
+- ✅ Layout responsivo
 
-## Running unit tests
+▶️ Como executar o projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone o repositório
 
-## Running end-to-end tests
+`bash
+git clone https://github.com/Vagnermrocha/pokedex.git
+cd pokedex
+`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Instale as dependências
 
-## Further help
+`bash
+npm install
+`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Inicie o servidor de desenvolvimento
 
-Figma utilizado: https://www.figma.com/file/AZ6mvD0UbYSqVBVoSIptu1/Pokedesk?type=design&node-id=26-0&mode=design&t=wiAaJ5EMs3WAky2J-0
+`bash
+ng serve
+`
 
-Api endpoint: "https://pokeaoi.co/api/v2/pokemon/?offset=0&limit=20"
+Acesse em: http://localhost:4200
 
-Css Animations Generator
-HTTPS://theappguruz.com/tag-tools/web/CSSAnimations/
+📚 Aprendizados
+
+Este projeto foi criado para praticar:
+- Consumo de APIs REST com Angular
+- Uso de Standalone Components
+- Organização de código moderno
+- Estilização com animações CSS
+- Integração com design no Figma
+
+📄 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+Desenvolvido com 💻 por Vagner Rocha
